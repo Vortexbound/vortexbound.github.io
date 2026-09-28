@@ -297,3 +297,15 @@ footer {
   h1.logo { font-size: 26px; }
   .game-detail h1 { font-size: 24px; }
 }
+
+/* Hidden footer code: same colour as background, revealed only when selected */
+footer { position: relative; }
+.hidden-code {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  font-size: 10px;
+  line-height: 1;
+  color: var(--bg);
+}
+.hidden-code::selection { background: var(--accent); color: #170606; }
